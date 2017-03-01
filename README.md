@@ -1,4 +1,6 @@
-# action-cable-react-jwtSame as action-cable-react, but allows to have JWT for user authentication using a hack
+# action-cable-react-jwt
+
+Same as [action-cable-react](https://github.com/schneidmaster/action-cable-react), but allows to have JWT for user authentication using a hack
 
 # Action Cable – Integrated WebSockets for Rails
 
