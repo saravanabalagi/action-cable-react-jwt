@@ -19,7 +19,6 @@
                     if (url == null) {
                         url = (ref = this.getConfig("url")) != null ? ref : this.INTERNAL.default_mount_path;
                     }
-                    this.INTERNAL.protocols.push(jwt);
                     return new ActionCable.Consumer(this.createWebSocketURL(url), jwt);
                 },
                 getConfig: function(name) {
@@ -235,7 +234,7 @@
                         if (this.webSocket != null) {
                             this.uninstallEventHandlers();
                         }
-                        this.webSocket = new WebSocket(this.consumer.url, protocols);
+                        this.webSocket = new WebSocket(this.consumer.url, protocols.concat(this.consumer.jwt));
                         this.installEventHandlers();
                         this.monitor.start();
                         return true;
