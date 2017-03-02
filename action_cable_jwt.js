@@ -20,7 +20,7 @@
                         url = (ref = this.getConfig("url")) != null ? ref : this.INTERNAL.default_mount_path;
                     }
                     this.INTERNAL.protocols.push(jwt);
-                    return new ActionCable.Consumer(this.createWebSocketURL(url, jwt));
+                    return new ActionCable.Consumer(this.createWebSocketURL(url), jwt);
                 },
                 getConfig: function(name) {
                     var element;
