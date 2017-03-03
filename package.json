@@ -1,0 +1,25 @@
+{
+  "name": "action-cable-react-jwt",
+  "version": "0.0.1",
+  "description": "Rails actioncable integration with JWT Authentication for React and ReactNative",
+  "main": "action_cable_react_jwt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zekedran/action-cable-react-jwt.git"
+  },
+  "keywords": [
+    "jwt",
+    "actioncable",
+    "react",
+    "react-native"
+  ],
+  "author": "Zeke Dran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zekedran/action-cable-react-jwt/issues"
+  },
+  "homepage": "https://github.com/zekedran/action-cable-react-jwt#readme"
+}

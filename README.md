@@ -4,13 +4,23 @@ Same as [action-cable-react](https://github.com/schneidmaster/action-cable-react
 
 ## Usage
 
-Import ActionCableJwt
+Add repo to your project
 
 ```javascript
-import {ActionCable} from './action-cable-react-jwt.js';
+yarn add action-cable-react-jwt
+
+// if you use npm, then use
+// npm install action-cable-react-jwt
+
+```
+
+Import action-cable-react-jwt
+
+```javascript
+import {ActionCable} from 'action-cable-react-jwt.js';
 
 // if you don't use ES6 then use
-// const {ActionCable} = require('./action-cable-react-jwt.js');
+// const {ActionCable} = require('action-cable-react-jwt.js');
 
 ```
 
