@@ -17,10 +17,10 @@ yarn add action-cable-react-jwt
 Import action-cable-react-jwt
 
 ```javascript
-import {ActionCable} from 'action-cable-react-jwt.js';
+import ActionCable from 'action-cable-react-jwt.js';
 
 // if you don't use ES6 then use
-// const {ActionCable} = require('action-cable-react-jwt.js');
+// const ActionCable = require('action-cable-react-jwt.js');
 
 ```
 
