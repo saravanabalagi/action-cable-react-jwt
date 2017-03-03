@@ -19,6 +19,8 @@ Creating an actioncable websocket
 let App = {};
 App.cable = ActionCable.createConsumer("ws://cable.example.com", jwt) // place your jwt here
 
+// you shall also use this.cable = ActionCable.createConsumer(...)
+// to create the connection as soon as the view loads, place this in componentDidMount
 ```
 
 Subscribing to a Channel for Receiving data
@@ -112,6 +114,8 @@ Remove a subscription from cable
 
 ```javascript
 App.cable.subscriptions.remove(this.subscription)
+
+// Place this in componentWillUnmount to remove subscription on exiting app
 
 ```
 
