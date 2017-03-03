@@ -108,6 +108,37 @@ class LocationChannel < ApplicationCable::Channel
 end
 ```
 
+Remove a subscription from cable
+
+```javascript
+App.cable.subscriptions.remove(this.subscription)
+
+```
+
+Add a subscription to cable
+
+```javascript
+App.cable.subscriptions.add(this.subscription)
+
+```
+
+Querying url and jwt from cable
+
+```javascript
+console.log(App.cable.jwt);
+console.log(App.cable.url);
+
+```
+
+Querying subscriptions and connection from cable
+
+```javascript
+console.log(App.cable.subscriptions);
+console.log(App.cable.connection);
+
+```
+
+
 
 ## License
 
