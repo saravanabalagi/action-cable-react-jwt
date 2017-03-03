@@ -1,6 +1,6 @@
 {
   "name": "action-cable-react-jwt",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Rails actioncable integration with JWT Authentication for React and ReactNative",
   "main": "action_cable_react_jwt.js",
   "scripts": {
