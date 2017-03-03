@@ -27,20 +27,22 @@
                     return new ActionCable.Consumer(this.createWebSocketURL(url), jwt);
                 },
                 getConfig: function(name) {
+                    if(!document.head) return null;
                     var element;
                     element = document.head.querySelector("meta[name='action-cable-" + name + "']");
                     return element != null ? element.getAttribute("content") : void 0;
                 },
                 createWebSocketURL: function(url) {
                     var a;
-                    if (url && !/^wss?:/i.test(url)) {
+                    if (url && !/^wss?:/i.test(url)
+                            && Object.getOwnPropertyNames(document).includes("createElement")) {
                         a = document.createElement("a");
                         a.href = url;
                         a.href = a.href;
                         a.protocol = a.protocol.replace("http", "ws");
                         return a.href;
                     } else {
-                        return url;
+                        return url.replace(/^http/, 'ws');
                     }
                 },
                 startDebugging: function() {
@@ -240,6 +242,7 @@
                             this.uninstallEventHandlers();
                         }
                         this.webSocket = new WebSocket(this.consumer.url, protocols.concat(this.consumer.jwt));
+                        this.webSocket.protocol = 'actioncable-v1-json';
                         this.installEventHandlers();
                         this.monitor.start();
                         return true;
