@@ -2,17 +2,24 @@
 
 Same as [action-cable-react](https://github.com/schneidmaster/action-cable-react), but allows authenticating websockets using JWTs
 
-## Usage
+## Installation
 
-Add repo to your project
+Yarn:
 
 ```javascript
 yarn add action-cable-react-jwt
 
-// if you use npm, then use
-// npm install action-cable-react-jwt
+```
+
+npm:
+
+```javascript
+npm install action-cable-react-jwt
 
 ```
+
+
+## Usage
 
 Import action-cable-react-jwt
 
