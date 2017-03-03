@@ -3,6 +3,11 @@
         (function() {
             var slice = [].slice;
 
+            global.document = {
+                addEventListener () {},
+                removeEventListener () {}
+            }
+
             this.ActionCable = {
                 INTERNAL: {
                     "message_types": {
