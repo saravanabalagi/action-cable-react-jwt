@@ -7,9 +7,10 @@ Same as [action-cable-react](https://github.com/schneidmaster/action-cable-react
 Import ActionCableJwt
 
 ```javascript
-import {ActionCable} from 'action-cable-jwt.js';
+import {ActionCable} from './action-cable-react-jwt.js';
+
 // if you don't use ES6 then use
-// const {ActionCable} = require('action-cable-jwt.js');
+// const {ActionCable} = require('./action-cable-react-jwt.js');
 
 ```
 
