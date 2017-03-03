@@ -9,7 +9,7 @@ Import ActionCableJwt
 ```javascript
 import {ActionCable} from 'action-cable-jwt.js';
 // if you don't use ES6 then use
-// const {ActionCable} = require 'action-cable-jwt.js';
+// const {ActionCable} = require('action-cable-jwt.js');
 
 ```
 
@@ -133,18 +133,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-
-## Support
-
-API documentation is at:
-
-* http://api.rubyonrails.org
-
-Bug reports can be filed for the Ruby on Rails project here:
-
-* https://github.com/rails/rails/issues
-
-Feature requests should be discussed on the rails-core mailing list here:
-
-* https://groups.google.com/forum/?fromgroups#!forum/rubyonrails-core
 
