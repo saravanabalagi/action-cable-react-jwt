@@ -4,8 +4,8 @@
             var slice = [].slice;
 
             global.document = {
-                addEventListener () {},
-                removeEventListener () {}
+                addEventListener: function() {},
+                removeEventListener: function() {}
             }
 
             this.ActionCable = {
