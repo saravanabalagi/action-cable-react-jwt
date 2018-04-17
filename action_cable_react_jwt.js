@@ -3,10 +3,7 @@
         (function() {
             var slice = [].slice;
 
-            global.document = {
-                addEventListener: function() {},
-                removeEventListener: function() {}
-            }
+            global.document = { }
 
             this.ActionCable = {
                 INTERNAL: {
