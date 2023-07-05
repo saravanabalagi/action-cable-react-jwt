@@ -494,7 +494,11 @@
                     results = [];
                     for (i = 0, len = subscriptions.length; i < len; i++) {
                         subscription = subscriptions[i];
-                        results.push(typeof subscription[callbackName] === "function" ? subscription[callbackName].apply(subscription, args) : void 0);
+                        if (subscription && typeof subscription[callbackName] === "function") {
+                            results.push(subscription[callbackName].apply(subscription, args));
+                        } else {
+                            results.push(void 0);
+                        }
                     }
                     return results;
                 };
